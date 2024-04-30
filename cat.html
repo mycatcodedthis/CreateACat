@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>Create A ᓚᘏᗢ</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+    </head>
+    <style>
+        body {
+        background-color:#141d2e;
+        font-family: Arial;
+        }
+        .tab {
+            width: 150px;
+            height: 50px;
+            background-color: #331728;
+            color: #4a6aa1;
+            border-radius: 25px;
+            border: 2px solid #331728;
+            font-weight: bold;
+            margin-bottom:20px;
+            font-size:15px;
+        }
+        .tab:hover {
+            background-color:#f5c6e3;
+            border: 2px solid #331728;
+        }
+        .tabs {
+            background-color: #afbaab;
+            border-radius: 0px 25px 0px 25px;
+            padding:25px;
+            width: 150px;
+        }
+        #createcat {
+            width:150px;
+            height: 50px;
+            background-color: #f5c6e3;
+            color: #331728;
+            border: 2px solid #331728;
+            font-weight: bold;
+        }
+        #createcat:hover {
+            background-color: #141d2e;
+            border: 2px solid #f5c6e3;
+            color: #f5c6e3;
+        }
+        .bodytext {
+            background-color: #7c99d6;
+            width: 600px;
+            height: 350px;
+            margin-left: 30px;
+            border-radius: 25px 0px 25px 0px;
+            padding:50px;
+            text-align: justify;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-align: center;
+            position: relative;
+            overflow:scroll;
+        }
+        .bodytext::-webkit-scrollbar {
+            display: none;
+        }
+        .animate__animated.animate__flash {
+            --animate-duration:3s;
+        }
+        .animate__animated.animate__bounce {
+            --animate-duration: 3s;
+        }
+        a {
+            color:white;
+        }
+        
+        .arrow {
+            background-color: #f5c6e3;
+            color: #141d2e;
+            height: 35px;
+            width: auto;
+            margin-bottom:65px;
+            border-radius: 15px;
+            padding: 5px;
+            font-weight: bold;
+            border: 2px solid #141d2e;
+        }
+        .arrow:hover {
+            background: #331728;
+            color: #f5c6e3;
+            border: 2px solid #f5c6e3;
+        }
+        .arrows {
+            position:absolute;
+            top:55px;
+            left: 620px;
+        }
+        #bg {
+            background-color: #ffefef;
+            opacity: 0.6;
+            background-image: radial-gradient(circle at center center, #668fcc, #ffefef), repeating-radial-gradient(circle at center center, #668fcc, #668fcc, 40px, transparent 80px, transparent 40px);
+            background-blend-mode: multiply;
+            width: 600px;
+            height: 350px;
+            border-radius: 20px;
+            position: relative;
+        }
+        img {
+        	position: absolute;
+        	margin-left:-30%;
+            display:inline-block;
+            height:100%;
+        }
+        .fur {
+            z-index:-100;
+        }
+        #fur2 {
+            visibility:hidden;
+        }
+        #fur3 {
+            visibility:hidden;
+        }
+        .eyes {
+            z-index: 1;
+        }
+        #eyes2 {
+            visibility: hidden;
+        }
+        #eyes3 {
+            visibility: hidden;
+        }
+        .mouth {
+            z-index:1;
+        }
+        #mouth2 {
+            visibility:hidden;
+        }
+        #mouth3 {
+            visibility:hidden;
+        }
+        .acc {
+            visibility:hidden;
+        }
+        .entire {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        }
+
+    </style>
+    <body>
+        <div class=entire>
+        <div style="display: flex;">
+            <div class=tabs>
+            <button onclick=location.href='main.php'
+            class=tab>✦ Home</button><br>
+            <button onclick="loadcheck()"
+            class=tab>✧ Checklist</button><br>
+            <button onclick="loaddesc()"
+            class=tab>✦ Site Description</button><br>
+            <button onclick="loadabout()"
+            class=tab>✧ About Us</button><br>
+            <button onclick=location.href='index.php'
+            class=tab>✦ Logout</button><br>
+            <button onclick=location.href='cat.html'
+            id=createcat
+            class="animate__animated animate__flash animate__infinite">!!! CLICK HERE TO CREATE A CAT !!!</button>
+            </div>
+        <script>
+            function loadcheck() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("txt").innerHTML = this.responseText;
+                }
+                xhttp.open("GET", "checklist.txt");
+                xhttp.send();
+            }
+            function loaddesc() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("txt").innerHTML = this.responseText;
+                }
+                xhttp.open("GET", "sitedesc.txt");
+                xhttp.send();
+            }
+            function loadabout() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("txt").innerHTML = this.responseText;
+                }
+                xhttp.open("GET", "about.txt");
+                xhttp.send();
+            }
+        </script>
+        
+        <div class=bodytext id=txt>
+            <div id=bg>
+                <img id=fur1 class=fur src="fur1.PNG"/>
+                <img id=fur2 class=fur src="fur2.PNG"/>
+                <img id=fur3 class=fur src="fur3.PNG"/>
+                <img id=eyes1 class=eyes src="eyes1.PNG"/>
+                <img id=eyes2 class=eyes src="eyes2.PNG"/>
+                <img id=eyes3 class=eyes src="eyes3.PNG"/>
+                <img id=mouth1 class=mouth src="mouth1.PNG"/>
+                <img id=mouth2 class=mouth src="mouth2.PNG"/>
+                <img id=mouth3 class=mouth src="mouth3.PNG"/>
+                <img id=acc1 class=acc src="acc1.PNG"/>
+                <img id=acc2 class=acc src="acc2.PNG"/>
+                <img id=acc3 class=acc src="acc3.PNG"/>
+            </div>
+            
+            <div class=arrows>
+                <button class=arrow id=nextfur onclick="nextfur()">Fur ➭</button><br>
+                <button class=arrow id=nexteyes onclick="nexteyes()">Eyes ➭</button><br>
+                <button class=arrow id=nextmouth onclick="nextmouth()">Mouth ➭</button><br>
+                <button class=arrow id=nextacc onclick="nextacc()">More ➭</button><br>
+            </div>
+        </div>
+        
+        </div>
+        </div>
+        
+        
+        <script src=cat.js></script>
+        
+    </body>
+</html>

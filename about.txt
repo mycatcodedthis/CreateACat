@@ -1,0 +1,9 @@
+1. My name is Lorry! I'm a CS student at GSU (like many of you guys lol) and I'm set to graduate this Winter of 2024! One thing about me is I love my cat :3<br><br>
+
+2. Basically, this project was me having a lot of fun with CSS and also creating a little cat customization game! I chose it because, well.. I think cats are pretty dope. <3<br><br>
+
+3. For the technology, I used a mix of a lot of HTML and CSS for the frontend, Javascript for the backend functions, and the PHP MySQL database system!<br><br>
+
+4. I learned a ton from this class, almost everything we learned in this course was fairly new to me. As much as it's been frustrating, it's been equally as fun and rewarding too. :P My web programming knowledge
+didn't extend anything past HTML and CSS, I had no idea how to host servers, let alone hook up databases to those servers to have completely functional websites. It's pretty
+fascinating and I'm really glad that I was able to be a part of this class! I'm also stoked to see what you guys have set up for these projects too!

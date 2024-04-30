@@ -1,0 +1,17 @@
+<a href="http://54.226.123.10/wp-content/themes/Kitty/index.php">Database usage:</a> Users can register/login and it puts information into the PHP MySQL database. <br><br>
+
+<a href="http://54.226.123.10/wp-content/themes/Kitty/cat.html">Ajax usage:</a> Pulls text from .txt files and displays them with XMLHttpRequest in this blue div box that
+you're reading from right now! Ajax was also used to pull the visibility functions for
+the Create-A-Cat page.<br><br>
+
+<a href="http://54.226.123.10/wp-content/themes/Kitty/main.php">Theme:</a> I created this whole theme from scratch! ^.^<br><br>
+
+<a href="http://54.226.123.10/wp-content/themes/Kitty/main.php">New library usage:</a> I implemented the Animate.css library to make the Create-A-Cat button flash,
+my cat's picture rotate, and animated other various texts around the page as well!<br><br>
+
+<a href="http://54.226.123.10/wp-content/themes/Kitty/cat.html">Javascript usage:</a> It's everywhere! From the buttons that redirect you from each page and in
+the Create-A-Cat functionalities too!<br><br>
+
+<a href="http://54.226.123.10/wp-content/themes/Kitty/cat.html">Membership area:</a> You have to create an account and log in to create a cat. ᓚᘏᗢ<br><br>
+
+<a href="http://54.226.123.10/wp-content/themes/Kitty/index.php">General user:</a> Even if you decide not to register, the username demouser with password ThisIsForWPClass (case sensitive) works!
